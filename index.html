@@ -6,31 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Funkoshop</title>
     <link rel="stylesheet" href="./css/index.css"> <!-- Normalización -->
-
+    
 </head>
 <body>
     
     <!-- Inicio Header -->
-    <header>     
-        <nav>
-            <picture>
+    <header>  <!-- Para el color de fondo. -->   
+        <nav class="navbar container"> <!-- Voy a utilizar para posicionar los elementos internos y limitarles su crecimiento --> <!-- EL contenido va a ocupar 1200px por la clase container -->
+            <picture class="navbar__logo">
                 <a href="./index.html">
                    <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funcoshop">
                 </a>
             </picture>
             
-            <ul>
-               <li>
-                   <a href="./pages/shop.html">SHOP</a>
+            <ul class="navbar__menu">
+               <li class="navbar__item with-submenu">
+                   <a class="navbar__link with-icon" href="./pages/shop.html">SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon></a> <!-- Al lado de SHOP va a estar nuestro icono -->
+                   <ul class="submenu">
+                       <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                       </li>
+                       <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                       </li>
+                       <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                       </li>
+                   </ul>
                </li>
-               <li>
-                   <a href="./pages/contact.html">CONTACTO</a>
+               <li class="navbar__item">
+                   <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
                </li>
-               <li>
-                   <a href="./pages/login.html">LOGIN</a>
+               <li class="navbar__item">
+                   <a class="navbar__link" href="./pages/login.html">LOGIN</a>
                 </li>
-               <li>
-                   <a href="./pages/cart.html"><img src="./img/icons/cart-icon.svg" alt="icono de carrito"></a>
+               <li class="navbar__item">
+                   <a class="navbar__cart" href="./pages/cart.html"><img src="./img/icons/cart-icon.svg" alt="icono de carrito"></a> <!--  -->
                </li>
             </ul>
         </nav>
@@ -154,5 +165,6 @@
             </section>
             <p>All rights reserved 2022 - Funkoshop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script> <!-- Importa el icono -->
 </body>
 </html>
