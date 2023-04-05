@@ -222,6 +222,10 @@ header{
     align-items: center;
 }
 
+.collection:nth-child(2) .collection__cover{
+    order: -1;
+}
+
 .collection__content{
     display: flex;
     flex-direction: column;
@@ -251,6 +255,11 @@ header{
     padding: var(--spacing-16) var(--spacing-36);
     border-radius: 50px;
     font-weight: 500;
+    transition: background .3s ease-in-out;
+}
+/* Siempre que haya un hover poner la transicion correspondiente*/
+.collection__link:hover{
+    background-color: var(--primart-solid);
 }
 
 
