@@ -7,6 +7,7 @@
     margin: var(--spacing-68) auto;
 }
 
+
 .slider__title{
     font-family: var(--alternative-font);
     font-size: 4.6rem;
@@ -20,7 +21,6 @@
     grid-template-columns: repeat(3,1fr); */
     display: flex;
     gap: var(--spacing-24);
-    
 }
 
 .card-item__cover{

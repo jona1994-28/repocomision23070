@@ -1,0 +1,204 @@
+/* SLIDER */
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
+}
+
+
+.slider__title{
+    font-family: var(--alternative-font);
+    font-size: 4.6rem;
+    /* text-transform: uppercase; Pone todo en mayúscula */
+   
+
+}
+
+.slider__items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    /* align-items: end;
+   justify-items: center; */
+}
+
+.card-item__cover{
+    display: flex;
+    position:relative;
+}
+
+.card-item__tag{
+    font-family: var(--base-font);
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: var(--primart-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    position: absolute;
+    right: 0;
+    width: 9.6rem;
+    text-align: center;
+}
+
+.card-item__cover img{
+   animation: animacion 1.7s;   /* Cada vez que aparece tiene un desvanecimiento la imagen */
+}
+
+.card-item__img--back{
+    display: none;
+}
+
+.card-item__cover:hover .card-item__img--back{
+    display: block;
+}
+
+.card-item__cover:hover .card-item__img--front{
+    display: none;
+}
+
+.card-item__content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    padding: var(--spacing-16);
+}
+
+ .card-item__licence{
+    
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.card-item__name{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.card-item__price{
+   
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.card-item__promo{
+    font-size: 1.2rem;
+    color: var(--secondary-solid);
+    font-weight: 700;
+}
+
+.card-item__cover{
+    display: flex;
+}
+
+/* FORMULARIO - ASIDE */
+
+.formulario{
+   display: flex;
+   flex-direction: column;
+   gap: .8rem;
+   padding-left: 1rem;
+
+}
+
+.formulario__title{
+    font-family: var(--base-font);
+    font-size: var( --font-xsmall);
+    color:  var(--dark-solid);
+    padding-top: 1.2rem;
+    
+}
+
+.formulario__input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #a2a2a2;
+    background-color: #fff;
+    
+}
+
+select {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13.3px;
+    color: #a2a2a2;
+    background-color: #fff;
+    appearance: none;
+    background-image: url("https://e7.pngegg.com/pngimages/142/367/png-clipart-arrow-icon-down-arrow-blue-web-design-thumbnail.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.cantidad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.cantidad__hd{
+    padding-right: 1rem;
+    font-family: var(--base-font);
+}
+
+.cantidad__hd::-webkit-input-placeholder {
+    text-align: center;
+    line-height: 100px;
+}
+
+.cantidad__m{
+    width: 45px;
+    height: 22px;
+    margin-right: 2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 13.3px;
+    align-content: center;
+}
+
+.cantidad__m::-webkit-input-placeholder {
+    text-align: center;
+    line-height: 100px;
+}
+
+.cantidad__-{
+    padding-right: 2rem;
+}
+
+.form-check{
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-top: 1.23rem;
+}
+
+/* 2° sección */
+
+.slider__items1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+}
+
+.slider__items1 .slider__item-1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.slider__items1 .slider__item-2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.slider__items1 .slider__item-3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}

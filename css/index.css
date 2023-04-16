@@ -50,7 +50,7 @@
 *,::before,::after{
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Como se comportan tanto los margenes como los rellenos que vamos a utilizar en nuestros elementos */
+  box-sizing: border-box; /* Como se comportan tanto los margenes como los rellenos que vamos a utilizar para calcular el ancho y alto de los elementos */
   /* Si usamos content-box cualquier elemento se va a ver modificado */
 }
 
@@ -58,6 +58,7 @@ html{
     font-family: var(--base-font);
     font-size: 62.5%;   /* El tamaño por defecto es de 16px. Por lo tanto 1em equivale a 10px */
     color: var(--dark-bg-solid);
+    box-sizing: inherit;
 }
 
 a{
@@ -89,6 +90,10 @@ img{            /* etiqueta en linea */
     max-width: 108.1rem;
     margin: 0 auto;
 }
+
+
+
+
 
 
 
