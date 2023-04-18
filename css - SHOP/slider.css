@@ -149,10 +149,10 @@ select {
     font-family: var(--base-font);
 }
 
-.cantidad__hd::-webkit-input-placeholder {
+/* .cantidad__hd::-webkit-input-placeholder {
     text-align: center;
     line-height: 100px;
-}
+} */
 
 .cantidad__m{
     width: 45px;
@@ -202,3 +202,5 @@ select {
     grid-column-start: 4;
     grid-column-end: 5;
 }
+
+

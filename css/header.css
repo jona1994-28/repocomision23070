@@ -9,6 +9,7 @@ header{
     display: flex;
     justify-content: space-between; /* Alinea el contenido */
     align-items: center;    /* Centro el contenido */
+
 }
 
 .navbar__logo{          
@@ -19,6 +20,7 @@ header{
     display: flex;
     align-items: center;
     gap: var(--spacing-20); /* Separa los elementos */
+    
 }    
 
 .navbar__link{  /* Le doy estilos a los enlaces */
@@ -27,12 +29,13 @@ header{
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative; /* El padre tiene que tener esa posicion para que el hijo se posicione de manera absoluta*/
-   
+    text-decoration: none;
+    color:rgb(255, 255, 255);
 }
 
 .navbar__link:hover{
     background-color: var(--primary-900);
-   
+    text-decoration: none;
 }
 
 .with-icon{
@@ -51,12 +54,15 @@ header{
     position: absolute;         
     background-color: var(--dark-bg-solid); 
     z-index: 3;
+    
 }
 
 .submenu__link{
     display: block;
     padding: var(--spacing-8) var(--spacing-16);
     font-size: var(--font-medium);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .submenu__link:hover{

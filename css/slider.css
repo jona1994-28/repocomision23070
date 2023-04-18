@@ -16,11 +16,19 @@
 
 }
 
+
 .slider__items{
     /* display: grid;
     grid-template-columns: repeat(3,1fr); */
     display: flex;
     gap: var(--spacing-24);
+    align-items: center;
+    justify-items: end;
+    
+}
+
+.card-item__link{
+    text-decoration: none;
 }
 
 .card-item__cover{
@@ -39,6 +47,7 @@
     right: 0;
     width: 9.6rem;
     text-align: center;
+    text-decoration: none;
 }
 
 .card-item__cover img{
@@ -62,12 +71,14 @@
     flex-direction: column;
     gap: var(--spacing-12);
     padding: var(--spacing-16);
+    
 }
 
  .card-item__licence{
     
     font-size: 1.4rem;
     font-weight: 500;
+    
 }
 
 .card-item__name{
@@ -90,3 +101,4 @@
 .card-item__cover{
     display: flex;
 }
+

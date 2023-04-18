@@ -1,0 +1,29 @@
+
+/* Creación del deslizable */
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    margin-left: 22rem;
+    cursor: pointer;
+}
+
+/* .pagination__input{
+    font-family: var(--base-font);
+    font-style: normal;
+    font-weight: 100;
+    font-size: var(--spacing-16);
+    line-height: 20px;
+    width: 44px;
+    text-align: center;
+    margin-bottom: 0.2rem;
+    border: 1px solid var(--primart-solid);
+    height: 44px;
+    border-radius: 1rem;
+    gap: 4rem;
+} */
+
+
+
